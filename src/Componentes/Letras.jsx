@@ -12,7 +12,7 @@ export default function Letras({letraClicada, setLetraClicada, letrasDesabitilad
 
   return (
     <div className="Letra">
-     {alfabeto.map(letra =>  <button disabled={letraClicada.includes(letra) || letrasDesabitiladas} onClick={ _ => Clique(letra) } className="abc" >{letra}</button>)}
+     {alfabeto.map(letra =>  <button data-test="letter" disabled={letraClicada.includes(letra) || letrasDesabitiladas} onClick={ _ => Clique(letra) } className="abc" >{letra}</button>)}
     </div>
   );
 }

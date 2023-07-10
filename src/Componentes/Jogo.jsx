@@ -18,14 +18,14 @@ export default function Jogo({erros, palavraSorteada, IniciarJogo, corDaPalavra}
   
   return (
     <div className="Jogo">
-      {imagensForca.map((imagenForca, index) =>  <img src={imagenForca} alt="" style={{
+      {imagensForca.map((imagenForca, index) =>  <img data-test="game-image" src={imagenForca} alt="" style={{
         display: erros == index ? "block" : "none"
       }} />  )}
     <div className='ColunaPalavras'>
-    <button onClick={IniciarJogo}>Inicio do jogo</button>  
+    <button data-test="choose-word" onClick={IniciarJogo}>Escolher Palavra</button>  
 
     <h1 style={{color: corDaPalavra}}>{palavraSorteada.map(letra =>
-      <label htmlFor="">{letra}</label>)}</h1> 
+      <label  data-test="word" htmlFor="">{letra}</label>)}</h1> 
     </div>
     </div>
   )
