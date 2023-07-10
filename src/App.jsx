@@ -73,7 +73,7 @@ function App() {
 
   return (
     <div className="App">
-      <div>{palavraSorteada}</div>
+     
       <Jogo erros={erros} palavraSorteada={palavraSorteadaArray} corDaPalavra={corDaPalavra}  IniciarJogo={IniciarJogo} letraClicada={letraClicada}  />
       <Letras letraClicada={letraClicada} letrasDesabitiladas={letrasDesabitiladas} setLetraClicada={CliclarNaLetra} />
     </div>
