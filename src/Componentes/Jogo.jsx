@@ -24,8 +24,7 @@ export default function Jogo({erros, palavraSorteada, IniciarJogo, corDaPalavra}
     <div className='ColunaPalavras'>
     <button data-test="choose-word" onClick={IniciarJogo}>Escolher Palavra</button>  
 
-    <h1 style={{color: corDaPalavra}}>{palavraSorteada.map(letra =>
-      <label  data-test="word" htmlFor="">{letra}</label>)}</h1> 
+    <h1 data-test="word" style={{color: corDaPalavra}}>{palavraSorteada.map(letra => letra)}</h1> 
     </div>
     </div>
   )
