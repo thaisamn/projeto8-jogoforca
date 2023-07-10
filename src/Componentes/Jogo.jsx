@@ -1,0 +1,46 @@
+import React, { useState } from 'react';
+import palavras from '../palavras';
+
+const imagensForca = [
+  'assets/img/forca0.png',
+  'assets/img/forca1.png',
+  'assets/img/forca2.png',
+  'assets/img/forca3.png',
+  'assets/img/forca4.png',
+  'assets/img/forca5.png',
+  'assets/img/forca6.png',
+];
+
+
+export default function Jogo({erros, palavraSorteada, IniciarJogo, corDaPalavra}) {
+  
+ 
+  
+  return (
+    <div className="Jogo">
+      {imagensForca.map((imagenForca, index) =>  <img src={imagenForca} alt="" style={{
+        display: erros == index ? "block" : "none"
+      }} />  )}
+    <div className='ColunaPalavras'>
+    <button onClick={IniciarJogo}>Inicio do jogo</button>  
+
+    <h1 style={{color: corDaPalavra}}>{palavraSorteada.map(letra =>
+      <label htmlFor="">{letra}</label>)}</h1> 
+    </div>
+    </div>
+  )
+}
+
+
+
+
+
+
+
+
+
+ 
+  
+  
+  
+  

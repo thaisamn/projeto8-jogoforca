@@ -1,0 +1,86 @@
+.App{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+height: 100%;
+width: 100%;
+
+}
+
+img{
+    width: 400px;
+    height: 467px;
+    }
+
+button{
+
+    background-color: #27AE60;
+    width: 200px;
+    height: 60px;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px ;
+    border:none;
+
+
+
+}
+
+button:disabled{
+    background-color: #798A9F ;
+    border: 2px solid #7AA7C7;
+    color: #9797a1;
+}
+
+.Letra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 85 0px;
+    margin-left: 05%;
+    margin-right: 05%;
+    margin-top: 5%;
+    
+}
+
+
+.Jogo{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    margin-left: 05%;
+    margin-right: 05%;
+    margin-top: 5%;
+}
+
+.abc{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    flex-direction: column;
+    justify-content: center;
+    color: #199af7;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 12px;
+    background-color: #E1ECF4;
+    border: solid 2px #2d94dd;
+}
+
+.ColunaPalavras{
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
